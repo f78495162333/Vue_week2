@@ -18,11 +18,9 @@ import { createApp } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.29/vue
               .then((res) => {
                 console.log(res.data.message);
                 const { expired, token } = res.data
-                console.log(expired,token);
-
                 //登入後需把 expired、token 存在 cookie 內
-                // document.cookie = `HaxToken=${token}; expires=${new Date(expired)};`;
-                // window.location.href = `./week2/week2.html`;
+                 document.cookie = `HaxToken=${token}; expires=${new Date(expired)};`;
+                 window.location.href = `./week2/week2.html`;
               })
               .catch((err) => console.log(err.data.message));
           }
