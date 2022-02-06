@@ -7,8 +7,8 @@ import { createApp } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.29/vue
             url: 'https://vue3-course-api.hexschool.io/v2',
             path: 'mura_api',
             user: {
-                username: 'mura.hung@frog-jump.com',
-                password: 'sam840429Z',
+                username: '',
+                password: '',
             }
           }
         },
